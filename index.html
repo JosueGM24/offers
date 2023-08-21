@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logibrandia Offers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="jspdf.min.js"></script>
+    <script type="text/javascript" src="JsBarcode.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="imag/svg" href="images/logibrandia.svg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="spaceBetwen">
+        <div class="boldLittle">
+            Hola, tenemos algo especial para ti.
+        </div>
+        <img src="images/logibrandia.svg">
+    </div>
+    <div class="center">
+        <div class="textNormal">
+            Logibrandia esta iniciando con sus primeros proyectos y por ser parte de nuestro inicio queremos recompensarte. 
+        </div>
+        <div class="textNormal">
+            Hemos creado una campaña de redesign para:
+        </div>
+        <div class="boldTitle">
+            ULEXMA.COM
+        </div>
+        <div class="textNormal">
+            Creada y diseñada de acuerdo a las tendencias en diseño web adaptadas a la imagen de 
+        </div>
+        <div class="boldLittle">
+            ULEXMA.COM 
+        </div>
+        <div class="textNormal">
+            Un diseño totalmente responsivo a cualquier dispositivo corrigiendo BUGS anteriores y con una combinación diferente entre colores y tipografías.
+            <br><br>
+            Mira todo lo que hemos preparado para ti:
+        </div>
+        <div class="spaceAround">
+            <button class="btnRegular" onclick="redDesk()">
+                Diseño de escritorio <img src="images/pdfWhite.svg">
+            </button>
+            <button class="btnRegular" onclick="redMov()">
+                Diseño movil <img src="images/pdfWhite.svg">
+            </button>
+            <button class="btnRegular" onclick="redEsp()">
+                Especificaciones <img src="images/pdfWhite.svg">
+            </button>
+        </div>
+    </div>
+    <div class="left">
+        <div class="boldTitle">
+            ¡Inicia este proyecto!
+        </div>
+        <div class="textNormal">
+            No dejes pasar esta gran oportunidad y obtén todos los descuentos que tenemos para ti.
+        </div>
+    </div>
+    <div class="center" style="
+    box-sizing: border-box;
+    background-image: url('images/bgTicket.png');
+    background-size: 120vw;
+    background-position: center;
+    background-repeat: no-repeat;">
+    
+    
+    <div class="ticket">
+        <div class="concept">
+            <div class="item">
+                <div class="textNormal">
+                    Rediseño de página ULEXMA.COM
+                </div>
+                <div class="prices">
+                    <div class="discount">
+                        <span id="previousPrice1">$2000</span>
+                    </div>
+                    <div class="currentPrice">
+                        <span id="priceIt1">$1300</span>
+                    </div>
+                    <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox"  onchange="verifyCost()" value="" id="it1" checked>
+                        <label class="form-check-label" for="it1">
+                            Seleccionar
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="textNormal">
+                    Implementar en hosting gratuito bajo el <br>
+dominio de <span class="boldLittle">ulexma.netlify.app</span>
+                </div>
+                <div class="prices">
+                    <div class="discount">
+                        <span id="previousPrice2">$500</span>
+                    </div>
+                    <div class="currentPrice">
+                        <span id="priceIt2">$150</span>
+                    </div>
+                    <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox"  onchange="verifyCost()" value="" id="it2" checked>
+                        <label class="form-check-label" for="it2">
+                            Seleccionar
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="textNormal">
+                    Logotipo combinado a rediseño con archivos: <br>
+                    <ul>
+                        <li>.svg</li>
+                        <li>.ai</li>
+                        <li>.esp</li>
+                        <li>.png</li>
+                        <li>.jpg</li>
+                    </ul>   
+                </div>
+                <div class="prices">
+                    <div class="discount">
+                        <span id="previousPrice3">$300</span>
+                    </div>
+                    <div class="currentPrice">
+                        <span id="priceIt3">$50</span>
+                    </div>
+                    <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox"  onchange="verifyCost()" value="" id="it3" checked>
+                        <label class="form-check-label" for="it3">
+                            Seleccionar
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="textNormal">
+                    Diseño de arjetas de presentación con <br>
+códigos QR renovados para el nuevo dominio.
+                </div>
+                <div class="prices">
+                    <div class="discount">
+                        <span id="previousPrice4">$200</span>
+                    </div>
+                    <div class="currentPrice">
+                        <span id="priceIt4">$100</span>
+                    </div>
+                    <div class="form-check">
+                        
+                      <input class="form-check-input" type="checkbox"  onchange="verifyCost()" value="" id="it4" checked>
+                      <label class="form-check-label" for="it4">
+                          Seleccionar
+                      </label>
+                    </div>
+                          
+                </div>
+            </div>
+        <div class="clave">
+            <span id="clave">
+                i11i21i31i41
+            </span>
+        </div>
+
+        </div>
+        <div class="details">
+            <div class="total">
+                <div class="mount">
+                    <div class="mountName">
+                        Descuentos
+                    </div>
+                    <div class="cost" style="font-family: 'poppins';
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #515151;">
+                        <span id="totalDiscount">$1400</span>
+                    </div>
+                </div>
+                <div class="mount">
+                    <div class="mountName">
+                        Total
+                    </div>
+                    <div class="cost">
+                        <span id="totalCost">$1600</span>
+                    </div>
+                </div>
+            </div>
+            <div class="boldLittle" style="font-size: 20px;">
+                Cuando selecciones todos tus productos <br>
+                 envíanos una foto del código de barras <br>
+                 generado en la parte inferior a <br> 
+                 cualquiera de nuestros
+                 medios <br> de contacto.
+            </div>
+            <div class="contact">
+                <button class="contactButton" onclick="whats()">
+                    <img src="images/whatsapp.svg">
+                </button>
+                <button class="contactButton" onclick="mail()">
+                    <img src="images/mail.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function mail(){
+        window.open("mailto:jos.god.mel.10@gmail.com?Subject=Interesado%20en%20los%20servicios", '_blank');
+    }
+    function whats(){
+        window.open("https://wa.me/525611473821", '_blank');
+    }
+    function redEsp(){
+        window.open("especificaciones.pdf", "_blank");
+    }
+    function redDesk(){
+        window.open("desktopVersion.pdf", "_blank");
+    }
+    function redMov(){
+        window.open("movilVersion.pdf", "_blank");
+    }
+    function verifyCost(){
+        var check1 = document.getElementById("it1");
+        var check2 = document.getElementById("it2");
+        var check3 = document.getElementById("it3");
+        var check4 = document.getElementById("it4");
+        var clave = document.getElementById("clave");
+        var totalCost = document.getElementById("totalCost");
+        var totalDiscount = document.getElementById("totalDiscount");
+        var total = 0;
+        var discount = 0;
+        var concat = "";
+        if (check1.checked){
+            total = total + 1300;
+            discount = discount + 700; 
+            concat = concat + "i11";
+        } else {
+            concat = concat + "i10";
+        }
+        if (check2.checked){
+            total = total + 150;
+            discount = discount + 350;
+            concat = concat + "i21";
+        } else {
+            concat = concat + "i20";
+        }
+        if (check3.checked){
+            total = total + 50;
+            discount = discount + 250;
+            concat = concat + "i31";
+        } else {
+            concat = concat + "i30";
+        }
+        if (check4.checked){
+            total = total + 100;
+            discount = discount + 100;
+            concat = concat + "i41";
+        } else {
+            concat = concat + "i40";
+        }
+        totalCost.innerHTML= "$" + total;
+        totalDiscount.innerHTML= "$" + discount;
+        clave.innerHTML=concat;
+    }
+    
+    function generateTicketPDF() {
+        var check1 = document.getElementById("it1");
+        var check2 = document.getElementById("it2");
+        var check3 = document.getElementById("it3");
+        var check4 = document.getElementById("it4");
+        var clave = document.getElementById("clave");
+        var totalCost = document.getElementById("totalCost");
+        var totalDiscount = document.getElementById("totalDiscount");
+        var total = 0;
+        var discount = 0;
+        var concat = "";
+        if (check1.checked){
+            total = total + 1300;
+            discount = discount + 700; 
+            concat = concat + "i11";
+        } else {
+            concat = concat + "i10";
+        }
+        if (check2.checked){
+            total = total + 150;
+            discount = discount + 350;
+            concat = concat + "i21";
+        } else {
+            concat = concat + "i20";
+        }
+        if (check3.checked){
+            total = total + 50;
+            discount = discount + 250;
+            concat = concat + "i31";
+        } else {
+            concat = concat + "i30";
+        }
+        if (check4.checked){
+            total = total + 100;
+            discount = discount + 100;
+            concat = concat + "i41";
+        } else {
+            concat = concat + "i40";
+        }
+        totalCost.innerHTML= "$" + total;
+        totalDiscount.innerHTML= "$" + discount;
+        clave.innerHTML=concat;
+        var doc = new jsPDF();
+        doc.setFontSize(25);
+        doc.setFont("helvetica", "bold");
+        doc.text("Tú ticket", 10, 10);
+        doc.setFontSize(12);
+        doc.setFont("helvetica", "regular");
+        doc.text("Código", 10, 30);
+        doc.setFontSize(20);
+        doc.setFont("Libre Barcode 128", "regular");
+        doc.text(concat, 10, 50);
+        
+        JsBarcode("#it1", "123456789"); // Replace "123456789" with your barcode data
+        alert("dani");
+        
+        var canvas = document.querySelector("canvas");
+        var barcodeDataURL = canvas.toDataURL(); // Convert canvas to data URL
+        
+        doc.addImage(barcodeDataURL, "PNG", 10, 10, 100, 50); // Add barcode image to PDF
+        
+        doc.save("ticket.pdf");
+    }
+</script>
+</body>
+</html> 

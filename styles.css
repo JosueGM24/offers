@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.spaceBetwen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 40px;
+}
+.textNormal {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+.boldLittle{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+}
+.left{
+    width: 100vw;
+    text-align: left;
+    padding: 10px 40px;
+}
+.center{
+    width: 100vw;
+    text-align: center;
+    padding: 10px 40px;
+}
+.clave{
+    color: #000000;
+    font-family: 'Libre Barcode 128';
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+body {
+    background-image: url('images/bgPoints.svg');
+    background-size: cover;
+    overflow-x: hidden;
+}
+.boldTitle{
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 48px;
+    margin: 30px 0px;
+}
+.spaceAround{
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    align-items: center;
+    width: 100vw;
+    margin: 20px 0px;
+}
+.btnWhite{
+    color: black;
+    background-color: #fff;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.contactButton {
+    background-color: transparent;
+    transition: all .3s;
+}
+.contactButton:hover {
+    transform: scale(1.1);
+}
+
+.ticket{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 115px;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color:rgba(131, 131, 131, 0.384);
+}
+.prices{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 22px;
+}
+.item { 
+    text-align: left;
+    padding: 15px 19px;
+    gap: 5px;
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+}
+ul{
+    margin: 0px 40px;
+}
+.currentPrice{
+    font-family: 'poppins';
+    font-weight: 900;
+    font-size: 24px;
+}
+.discount {
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 20px;
+    color: #515151;
+    text-decoration-line:line-through;
+}
+.concept{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+.details {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+}
+.total{
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    padding: 12px 39px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+.mount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.mountName{
+    width: 212px;
+    color: #535353;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    line-height: normal;
+}
+.cost {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+label{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 17px;
+    color: #5c5c5c;
+}
+.btnRegular{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: white;
+    background-color: #5552FC;
+    border: none;
+    border-radius: 11px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 16px;
+    cursor: pointer;
+}
+.btnRegular img {
+    width: 37px;
+    height: 31px;
+    margin-left: 10px;
+}
+button {
+    border: none;
+}
